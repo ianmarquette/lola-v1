@@ -1,0 +1,56 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the sections of the site/application.
+// -----------------------------------------------------------------------------
+
+
+.bg--pink {
+	background-color: $brand-color-tint;
+	width: 100%;
+
+	@include breakpoint(medium-bp) { 
+		@include rem(padding-left, 2);
+		@include rem(padding-right, 2);
+	}
+}
+.bg--white {
+	@include rem(padding-bottom, 1);
+	@include rem(padding-left, 0);
+	@include rem(padding-right, 0);
+	background-color: #ffffff;
+	padding-top: 0;
+	width: 100%;
+
+	@include breakpoint(medium-bp) { 
+		@include rem(padding-bottom, 1.75);
+		@include rem(padding-left, 2);
+		@include rem(padding-right, 2);
+	}
+
+	@include breakpoint(large-bp) { 
+		@include rem(padding-bottom, 5);
+		@include rem(padding-left, 0);
+		@include rem(padding-right, 0);
+	}
+}
+
+.bg--light-grey {
+	@include rem(padding-top, 2);
+	@include rem(padding-bottom, 1);
+	background-color: $light-grey;
+	width: 100%;
+
+	@include breakpoint(medium-bp) { 
+		@include rem(padding-top, 2);
+		@include rem(padding-bottom, 1.75);
+		@include rem(padding-left, 2);
+		@include rem(padding-right, 2);
+	}
+
+	@include breakpoint(large-bp) { 
+		@include rem(padding-top, 6);
+		@include rem(padding-bottom, 5);
+		@include rem(padding-left, 0);
+		@include rem(padding-right, 0);
+	}
+}
+

@@ -1,0 +1,75 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+.site-title {
+	line-height: 1;
+	margin: 0.7em 0;
+}
+
+.site-title a {
+	@include rem(font-size, 1);
+	border-bottom-width: 0px;
+	color: $brand-alternate;
+	// font-size: 180%;
+	font-weight: 700;
+	text-decoration: none;
+
+	@include breakpoint(medium-bp) { 
+		@include rem(font-size, 1.5); 
+	}
+}
+
+// Navigation
+
+.menu {
+	@include rem(font-size, 1);
+	@include rem(margin-top, 0.5);
+	@include rem(margin-bottom, 1);
+	font-family: $text-font-stack-san-serif;
+	font-weight: 700;
+	list-style-type: none;
+	text-align: right;
+
+	@include breakpoint(medium-bp) { 
+		@include rem(font-size, 1.25); 
+	}
+
+	a {
+		color: $brand-alternate;
+	}
+}
+
+.current_page_item {
+	display: none;
+}
+
+.hero-image {
+	@include rem(margin-top, 3);
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 80%;
+
+	@include breakpoint(medium-bp) { 
+		@include rem(margin-top, 6);
+		display: inline-block;
+		margin-left: inherit;
+		margin-right: inherit;
+		max-width: 100%;
+	}
+}
+
+.hero-image--small {
+	@include rem(margin-top, 1.5);
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 70%;
+
+	@include breakpoint(medium-bp) { 
+		display: inline-block;
+		margin-left: inherit;
+		margin-right: inherit;
+	}
+}

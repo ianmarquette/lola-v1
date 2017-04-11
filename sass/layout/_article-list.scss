@@ -1,0 +1,16 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the article list.
+// -----------------------------------------------------------------------------
+
+.article-list {
+	list-style-type: none;
+	margin-left: 0;
+
+	p {
+		@include rem (font-size, 1.25);
+
+		@include breakpoint(medium-bp) { 
+      		@include rem (font-size, 1.5);
+    	}
+	}
+}
